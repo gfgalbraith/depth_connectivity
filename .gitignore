@@ -1,0 +1,15 @@
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Big data / outputs (keep OUT of git)
+tmp/
+pilot_experiments/runs/
+pilot_experiments/logs/
+paper_analysis/outputs/
+*.nc
+*.zarr/
+
+# OS/editor
+.DS_Store
