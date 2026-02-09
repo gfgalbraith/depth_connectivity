@@ -5,7 +5,6 @@ __pycache__/
 
 # Big data / outputs (keep OUT of git)
 tmp/
-learning/
 pilot_experiments/runs/
 pilot_experiments/logs/
 paper_analysis/outputs/
