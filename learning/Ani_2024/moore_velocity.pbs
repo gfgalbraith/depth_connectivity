@@ -1,0 +1,164 @@
+ #!/bin/sh
+#PBS -l mem=20gb
+#PBS -l walltime=400:00:00,nodes=1:ppn=4
+#PBS -M c.ani@aims.gov.au
+#PBS -m abe
+#PBS -e moore_vel.e
+
+module load netcdf/4.3.3.1-v4 nco
+
+cd /export/scratch/cani/RRAP/Oceanparcels/Moore/velocity_data/
+#cd RRAP/Oceanparcels/Moore/velocity_data/
+
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-11-30.nc Moore_uv_2015-11-30.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-01.nc Moore_uv_2015-12-01.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-02.nc Moore_uv_2015-12-02.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-03.nc Moore_uv_2015-12-03.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-04.nc Moore_uv_2015-12-04.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-05.nc Moore_uv_2015-12-05.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-06.nc Moore_uv_2015-12-06.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-07.nc Moore_uv_2015-12-07.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-08.nc Moore_uv_2015-12-08.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-09.nc Moore_uv_2015-12-09.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-10.nc Moore_uv_2015-12-10.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-11.nc Moore_uv_2015-12-11.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-12.nc Moore_uv_2015-12-12.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-13.nc Moore_uv_2015-12-13.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-14.nc Moore_uv_2015-12-14.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-15.nc Moore_uv_2015-12-15.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-16.nc Moore_uv_2015-12-16.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-17.nc Moore_uv_2015-12-17.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-18.nc Moore_uv_2015-12-18.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-19.nc Moore_uv_2015-12-19.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-20.nc Moore_uv_2015-12-20.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-21.nc Moore_uv_2015-12-21.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-22.nc Moore_uv_2015-12-22.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-23.nc Moore_uv_2015-12-23.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-24.nc Moore_uv_2015-12-24.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-25.nc Moore_uv_2015-12-25.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-26.nc Moore_uv_2015-12-26.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-27.nc Moore_uv_2015-12-27.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-28.nc Moore_uv_2015-12-28.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-29.nc Moore_uv_2015-12-29.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-30.nc Moore_uv_2015-12-30.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2015-12-31.nc Moore_uv_2015-12-31.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-18.nc Moore_uv_2016-11-18.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-19.nc Moore_uv_2016-11-19.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-20.nc Moore_uv_2016-11-20.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-21.nc Moore_uv_2016-11-21.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-22.nc Moore_uv_2016-11-22.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-23.nc Moore_uv_2016-11-23.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-24.nc Moore_uv_2016-11-24.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-25.nc Moore_uv_2016-11-25.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-26.nc Moore_uv_2016-11-26.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-27.nc Moore_uv_2016-11-27.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-28.nc Moore_uv_2016-11-28.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-29.nc Moore_uv_2016-11-29.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-11-30.nc Moore_uv_2016-11-30.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-01.nc Moore_uv_2016-12-01.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-02.nc Moore_uv_2016-12-02.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-03.nc Moore_uv_2016-12-03.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-04.nc Moore_uv_2016-12-04.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-05.nc Moore_uv_2016-12-05.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-06.nc Moore_uv_2016-12-06.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-07.nc Moore_uv_2016-12-07.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-08.nc Moore_uv_2016-12-08.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-09.nc Moore_uv_2016-12-09.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-10.nc Moore_uv_2016-12-10.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-11.nc Moore_uv_2016-12-11.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-12.nc Moore_uv_2016-12-12.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-13.nc Moore_uv_2016-12-13.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-14.nc Moore_uv_2016-12-14.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-15.nc Moore_uv_2016-12-15.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-16.nc Moore_uv_2016-12-16.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-17.nc Moore_uv_2016-12-17.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-18.nc Moore_uv_2016-12-18.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-19.nc Moore_uv_2016-12-19.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2016-12-20.nc Moore_uv_2016-12-20.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-08.nc Moore_uv_2017-11-08.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-09.nc Moore_uv_2017-11-09.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-10.nc Moore_uv_2017-11-10.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-11.nc Moore_uv_2017-11-11.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-12.nc Moore_uv_2017-11-12.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-13.nc Moore_uv_2017-11-13.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-14.nc Moore_uv_2017-11-14.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-15.nc Moore_uv_2017-11-15.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-16.nc Moore_uv_2017-11-16.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-17.nc Moore_uv_2017-11-17.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-18.nc Moore_uv_2017-11-18.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-19.nc Moore_uv_2017-11-19.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-20.nc Moore_uv_2017-11-20.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-21.nc Moore_uv_2017-11-21.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-22.nc Moore_uv_2017-11-22.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-23.nc Moore_uv_2017-11-23.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-24.nc Moore_uv_2017-11-24.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-25.nc Moore_uv_2017-11-25.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-26.nc Moore_uv_2017-11-26.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-27.nc Moore_uv_2017-11-27.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-28.nc Moore_uv_2017-11-28.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-29.nc Moore_uv_2017-11-29.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-11-30.nc Moore_uv_2017-11-30.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-01.nc Moore_uv_2017-12-01.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-02.nc Moore_uv_2017-12-02.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-03.nc Moore_uv_2017-12-03.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-04.nc Moore_uv_2017-12-04.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-05.nc Moore_uv_2017-12-05.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-06.nc Moore_uv_2017-12-06.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-07.nc Moore_uv_2017-12-07.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-08.nc Moore_uv_2017-12-08.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-09.nc Moore_uv_2017-12-09.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-10.nc Moore_uv_2017-12-10.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-11.nc Moore_uv_2017-12-11.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-12.nc Moore_uv_2017-12-12.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-13.nc Moore_uv_2017-12-13.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-14.nc Moore_uv_2017-12-14.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-15.nc Moore_uv_2017-12-15.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-16.nc Moore_uv_2017-12-16.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-17.nc Moore_uv_2017-12-17.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-18.nc Moore_uv_2017-12-18.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-19.nc Moore_uv_2017-12-19.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-20.nc Moore_uv_2017-12-20.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-21.nc Moore_uv_2017-12-21.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-22.nc Moore_uv_2017-12-22.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-23.nc Moore_uv_2017-12-23.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-24.nc Moore_uv_2017-12-24.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-25.nc Moore_uv_2017-12-25.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-26.nc Moore_uv_2017-12-26.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-27.nc Moore_uv_2017-12-27.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-28.nc Moore_uv_2017-12-28.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-29.nc Moore_uv_2017-12-29.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-30.nc Moore_uv_2017-12-30.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2017-12-31.nc Moore_uv_2017-12-31.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-01.nc Moore_uv_2018-01-01.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-02.nc Moore_uv_2018-01-02.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-03.nc Moore_uv_2018-01-03.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-04.nc Moore_uv_2018-01-04.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-05.nc Moore_uv_2018-01-05.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-06.nc Moore_uv_2018-01-06.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-07.nc Moore_uv_2018-01-07.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-08.nc Moore_uv_2018-01-08.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-09.nc Moore_uv_2018-01-09.nc
+ncks -d j,1425,1480 -d i,145,200 /export/home/a-e/cani/RRAP/Oceanparcels/gbr1_velocity_data/gbr1_uv_2018-01-10.nc Moore_uv_2018-01-10.nc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
